@@ -63,7 +63,8 @@ public class DeviceController {
 
   private final Logger logger = LoggerFactory.getLogger(DeviceController.class);
 
-  private static final int MAX_DEVICES = 6;
+  // BJ: Set global maximum devices
+  private static final int MAX_DEVICES = 1;
 
   private final PendingDevicesManager pendingDevices;
   private final AccountsManager       accounts;
