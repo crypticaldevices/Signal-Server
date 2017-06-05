@@ -32,6 +32,10 @@ public class S3Configuration {
   @NotEmpty
   @JsonProperty
   private String attachmentsBucket;
+  
+  @NotEmpty
+  @JsonProperty
+  private String regionId;
 
   public String getAccessKey() {
     return accessKey;
@@ -43,5 +47,9 @@ public class S3Configuration {
 
   public String getAttachmentsBucket() {
     return attachmentsBucket;
+  }
+
+  public String getRegionId() {
+      return regionId;
   }
 }

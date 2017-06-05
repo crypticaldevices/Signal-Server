@@ -19,7 +19,8 @@ public class UrlSignerTest {
     when(configuration.getAccessKey()).thenReturn("foo");
     when(configuration.getAccessSecret()).thenReturn("bar");
     when(configuration.getAttachmentsBucket()).thenReturn("attachments-test");
-
+    when(configuration.getRegionId()).thenReturn("us-east-2");
+    
     UrlSigner signer = new UrlSigner(configuration);
     URL url = signer.getPreSignedUrl(1234, HttpMethod.GET);
 
